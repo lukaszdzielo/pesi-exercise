@@ -1,0 +1,57 @@
+/* nunito-regular - latin-ext */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Nunito";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/assets/fonts/nunito-v32-latin-ext-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-700 - latin-ext */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Nunito";
+	font-style: normal;
+	font-weight: 700;
+	src: url("/assets/fonts/nunito-v32-latin-ext-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* rubik-500 - latin_latin-ext */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Rubik";
+	font-style: normal;
+	font-weight: 500;
+	src: url("/assets/fonts/rubik-v31-latin_latin-ext-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@import "tailwindcss";
+
+@theme {
+	--white-blue: #f9fafc;
+	--light-grey: #f4f5f8;
+	--grey: #919191;
+	--alt-grey: #686868;
+	--dark-grey: #585656;
+	--black: #202020;
+
+	--purple: #ad4eec;
+	--blue: #4ea2ec;
+	--orange: #ff7700;
+
+	--dark-blue-10: rgba(0, 63, 143, 10.2%); /* #003f8f @ 10.2% */
+	--darker-blue-6: rgba(6, 45, 94, 5.88%); /* #062d5e @ 5.88% */
+	--darker-blue-10: rgba(6, 45, 94, 10.2%); /* #062d5e @ 10.2% */
+
+	--default-font-family: "Nunito", sans-serif;
+	--default-heading-family: "Rubik", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--default-heading-family);
+	font-weight: 500;
+}

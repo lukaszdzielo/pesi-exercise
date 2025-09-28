@@ -4,66 +4,52 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Pesi - Exercise</title>
-		<style>
-			/* rubik-500 - latin_latin-ext */
-			@font-face {
-				font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-				font-family: "Rubik";
-				font-style: normal;
-				font-weight: 500;
-				src: url("assets/fonts/rubik-v31-latin_latin-ext-500.woff2")
-					format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-			}
-
-			/* nunito-regular - latin-ext */
-			@font-face {
-				font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-				font-family: "Nunito";
-				font-style: normal;
-				font-weight: 400;
-				src: url("assets/fonts/nunito-v32-latin-ext-regular.woff2")
-					format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-			}
-			/* nunito-700 - latin-ext */
-			@font-face {
-				font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-				font-family: "Nunito";
-				font-style: normal;
-				font-weight: 700;
-				src: url("assets/fonts/nunito-v32-latin-ext-700.woff2")
-					format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-			}
-		</style>
-
-		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-		<style type="text/tailwindcss">
-			@theme {
-			}
-		</style>
+		<link href="./assets/css/output.css" rel="stylesheet" />
 	</head>
-	<body>
-		<header class="flex justify-between items-center py-[9px] px-5">
-			<img src="/assets/img/logo.svg" alt="Logo wczesnoszkolni.pl" />
+	<body class="bg-[var(--white-blue)]">
+		<header
+			class="flex justify-between items-center gap-5 min-h-16 py-[9px] px-5 bg-white shadow-[0px_2px_4px_0px_var(--darker-blue-10)]"
+		>
+			<img
+				src="/assets/img/logo.svg"
+				alt="logo wczesnoszkolni.pl"
+				class="max-w-[50%]"
+			/>
 			<button class="flex items-center gap-[10px]">
-				<span class="block w-[39px] h-[39px] bg-red-50"></span>
+				<img src="/assets/img/avatar.svg" alt="Avatar image" />
 				<span>Basia</span>
-				<img src="/assets/img/arrow.svg" alt="Button arrow" />
+				<img src="/assets/img/icon-arrow.svg" alt="arrow icon" />
 			</button>
 		</header>
-		<main>
-			<section>
-				<div>
-					<div>
-						<h4 class="font-[Rubik]">Materiały edukacyjne</h4>
-						<span>(456)</span>
+		<main class="mt-[30px] px-5">
+			<section class="max-w-[1170px] mx-auto">
+				<div class="flex flex-col md:flex-row gap-5 justify-between">
+					<div
+						class="relative md:order-1 w-full md:max-w-[270px] rounded-[5px] bg-white shadow-[0px_3px_20px_0px_var(--darker-blue-10)]"
+					>
+						<input
+							id="searchInput"
+							type="text"
+							placeholder="Szukaj"
+							class="w-full py-[9px] px-[10px] placeholder-[var(--dark-grey)]"
+						/>
+						<img
+							src="/assets/img/icon-search.svg"
+							alt="search icon"
+							class="absolute top-0 end-[10px] h-full w-5 pointer-events-none"
+						/>
 					</div>
-					<form>
-						<div>Szukaj</div>
-					</form>
+
+					<div class="flex gap-[10px]">
+						<h4 class="text-[26px] text-[var(--black)]">
+							Materiały edukacyjne
+						</h4>
+						<span class="text-[var(--grey)]">(456)</span>
+					</div>
 				</div>
-				<div>Wczesnoszkolni.pl - Materiały edukacyjne</div>
+				<div class="mt-5">Wczesnoszkolni.pl - Materiały edukacyjne</div>
 			</section>
-			<section>
+			<section class="max-w-[1170px] mx-auto">
 				<div>
 					<img src="/assets/img/owl.svg" alt="Owl image" />
 				</div>
