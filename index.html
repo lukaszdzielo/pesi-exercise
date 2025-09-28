@@ -4,7 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Pesi - Exercise</title>
-		<link href="./assets/css/output.css" rel="stylesheet" />
+		<link href="/assets/css/output.css" rel="stylesheet" />
+		<script src="/assets/js/script.js" defer></script>
 	</head>
 	<body class="bg-[var(--white-blue)]">
 		<header
@@ -17,8 +18,8 @@
 				/>
 			</a>
 
-			<div class="relative inline-block text-left ">
-				<button class="flex items-center gap-[10px]">
+			<div class="relative">
+				<button id="openMenuBtn" class="flex items-center gap-[10px]">
 					<img src="/assets/img/avatar.svg" alt="Avatar image" />
 					<span class="hidden sm:block text-[var(--dark-grey)]"
 						>Basia</span
@@ -26,7 +27,7 @@
 					<img src="/assets/img/icon-arrow.svg" alt="arrow icon" />
 				</button>
 
-				<div class="absolute end-0 pt-[30px] z-2">
+				<div id="menuWrapper" class="absolute hidden end-0 top-[calc(100%+30px)] z-2">
 					<div
 						class="w-[280px] sm:w-[310px] p-5 rounded-md bg-white text-[var(--dark-grey)] shadow-[0px_20px_50px_0px_var(--darker-blue-10)]"
 					>

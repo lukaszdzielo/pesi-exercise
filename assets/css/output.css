@@ -243,11 +243,26 @@
   .end-\[10px\] {
     inset-inline-end: 10px;
   }
+  .-top-\[30px\] {
+    top: calc(30px * -1);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-\[30px\] {
+    top: 30px;
+  }
+  .top-\[calc\(100\%\+30px\)\] {
+    top: calc(100% + 30px);
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
+  }
+  .-bottom-\[30px\] {
+    bottom: calc(30px * -1);
+  }
+  .bottom-\[30px\] {
+    bottom: 30px;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
